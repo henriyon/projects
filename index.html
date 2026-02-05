@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Royal - Estilo & Tradição</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#home">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Barbearia <span>Royal</span></h1>
+                        <p class="tagline">Excelência em cuidados masculinos</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Navegação Desktop -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#services" class="nav-link">Serviços</a></li>
+                    <li><a href="#team" class="nav-link">Barbeiros</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                    <li><a href="#pricing" class="nav-link">Preços</a></li>
+                    <li><a href="#booking" class="nav-link">Agendar</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botões de ação -->
+            <div class="header-actions">
+                <a href="tel:+5511999999999" class="phone-btn">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(11) 99999-9999</span>
+                </a>
+                <a href="#booking" class="btn btn-primary">Agendar Agora</a>
+            </div>
+
+            <!-- Menu Mobile Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Navegação Mobile -->
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#team" class="nav-link">Barbeiros</a></li>
+                <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                <li><a href="#pricing" class="nav-link">Preços</a></li>
+                <li><a href="#booking" class="nav-link">Agendar</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+                <li class="mobile-phone">
+                    <a href="tel:+5511999999999">
+                        <i class="fas fa-phone-alt"></i>
+                        (11) 99999-9999
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" aria-label="Contato pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h2 class="hero-title">Estilo & Tradição Masculina</h2>
+                        <p class="hero-subtitle">Na Barbearia Royal, oferecemos mais que um corte de cabelo. Oferecemos uma experiência única de cuidado masculino.</p>
+                        <div class="hero-buttons">
+                            <a href="#booking" class="btn btn-primary btn-large">Agendar Agora</a>
+                            <a href="#services" class="btn btn-secondary btn-large">Nossos Serviços</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1621605815973-fac8cc63d6cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h2 class="hero-title">Profissionais Qualificados</h2>
+                        <p class="hero-subtitle">Nossa equipe é formada por barbeiros experientes e constantemente treinados nas últimas tendências.</p>
+                        <div class="hero-buttons">
+                            <a href="#team" class="btn btn-primary btn-large">Conheça a Equipe</a>
+                            <a href="#gallery" class="btn btn-secondary btn-large">Ver Galeria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" id="sliderPrev" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+            </div>
+            <button class="slider-next" id="sliderNext" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Seção de Destaques -->
+    <section class="highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horários Flexíveis</h3>
+                    <p>Atendemos de segunda a sábado, das 8h às 20h, para melhor atender sua rotina.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Profissionais Certificados</h3>
+                    <p>Nossos barbeiros possuem certificações nacionais e internacionais em técnicas avançadas.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Produtos Premium</h3>
+                    <p>Trabalhamos apenas com produtos das melhores marcas do mercado de cuidados masculinos.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <h3>Ambiente Confortável</h3>
+                    <p>Espaço sofisticado com assentos premium, TV e bebidas para sua comodidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Conheça nossa história</span>
+                <h2 class="section-title">Sobre a Barbearia Royal</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="Interior da Barbearia Royal">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Uma Tradição de Excelência Desde 2005</h3>
+                    <p>Há mais de 15 anos, a Barbearia Royal se dedica a oferecer serviços de alta qualidade para homens que valorizam estilo, cuidado pessoal e bem-estar.</p>
+
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Equipe especializada e em constante treinamento</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Produtos importados e de primeira linha</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ambiente climatizado e sofisticado</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Atendimento personalizado e exclusivo</span>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4 data-count="15000">0</h4>
+                            <p>Clientes Satisfeitos</p>
+                        </div>
+                        <div class="stat">
+                            <h4 data-count="18">0</h4>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat">
+                            <h4 data-count="5">0</h4>
+                            <p>Prêmios Recebidos</p>
+                        </div>
+                        <div class="stat">
+                            <h4 data-count="98">0</h4>
+                            <p>% de Satisfação</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">O que oferecemos</span>
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Oferecemos uma gama completa de serviços para atender todas as suas necessidades de cuidados masculinos.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Os cards de serviços serão gerados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Preços -->
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Investimento em seu estilo</span>
+                <h2 class="section-title">Tabela de Preços</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Os planos de preços serão gerados via JavaScript -->
+            </div>
+
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> Aceitamos todos os cartões de crédito, débito, PIX e transferência bancária. Para pacotes com 5 sessões ou mais, consulte condições especiais.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Barbeiros -->
+    <section id="team" class="section team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nossos especialistas</span>
+                <h2 class="section-title">Conheça Nossos Barbeiros</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Profissionais qualificados e apaixonados pelo que fazem, prontos para oferecer o melhor atendimento.</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Os cards de barbeiros serão gerados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nossos trabalhos</span>
+                <h2 class="section-title">Galeria</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Confira alguns dos nossos melhores trabalhos e o ambiente da nossa barbearia.</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="haircuts">Cortes</button>
+                <button class="filter-btn" data-filter="beards">Barbas</button>
+                <button class="filter-btn" data-filter="place">Ambiente</button>
+                <button class="filter-btn" data-filter="products">Produtos</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- As imagens da galeria serão geradas via JavaScript -->
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-secondary" id="loadMoreGallery">Carregar Mais</button>
+            </div>
+        </div>
+
+        <!-- Modal da Galeria -->
+        <div class="gallery-modal" id="galleryModal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">&times;</button>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="">
+                    <div class="modal-nav">
+                        <button class="modal-prev" id="modalPrev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="modal-next" id="modalNext">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p id="modalCaption"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Agendamento -->
+    <section id="booking" class="section booking">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-info">
+                    <div class="section-header">
+                        <span class="section-subtitle">Agende seu horário</span>
+                        <h2 class="section-title">Faça seu Agendamento</h2>
+                        <div class="section-divider"></div>
+                    </div>
+
+                    <div class="booking-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Escolha o Serviço</h4>
+                                <p>Selecione entre nossos serviços premium o que melhor atende suas necessidades.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Escolha Data e Hora</h4>
+                                <p>Agende no dia e horário que for mais conveniente para você.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Confirme o Agendamento</h4>
+                                <p>Preencha seus dados e receba a confirmação por WhatsApp ou e-mail.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking-contact">
+                        <h4>Precisa de ajuda?</h4>
+                        <p>Entre em contato conosco pelos nossos canais de atendimento:</p>
+                        <div class="contact-methods">
+                            <a href="tel:+5511999999999" class="contact-method">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>(11) 99999-9999</span>
+                            </a>
+                            <a href="https://wa.me/5511999999999" class="contact-method" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="mailto:contato@barbeariaroyal.com.br" class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <span>E-mail</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-form-container">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-header">
+                            <h3>Preencha o Formulário</h3>
+                            <p>Todos os campos são obrigatórios</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Nome Completo *</label>
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefone *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(11) 99999-9999">
+                                <div class="error-message" id="phoneError"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service">Serviço *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Selecione um serviço</option>
+                                    <!-- Opções serão preenchidas via JavaScript -->
+                                </select>
+                                <div class="error-message" id="serviceError"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="barber">Barbeiro Preferencial</label>
+                                <select id="barber" name="barber">
+                                    <option value="">Qualquer barbeiro</option>
+                                    <!-- Opções serão preenchidas via JavaScript -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Data *</label>
+                                <input type="date" id="date" name="date" required>
+                                <div class="error-message" id="dateError"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Horário *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Selecione um horário</option>
+                                    <!-- Opções serão preenchidas via JavaScript -->
+                                </select>
+                                <div class="error-message" id="timeError"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem Adicional</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Alguma observação ou preferência específica..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">Aceito os <a href="#" class="terms-link">Termos e Condições</a> e a <a href="#" class="terms-link">Política de Privacidade</a> *</label>
+                            </div>
+                            <div class="error-message" id="termsError"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                            <span class="btn-text">Confirmar Agendamento</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Processando...
+                            </span>
+                        </button>
+
+                        <div class="form-success" id="formSuccess" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Agendamento realizado com sucesso!</h4>
+                            <p>Em breve entraremos em contato para confirmação. Você receberá um e-mail com os detalhes.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">O que dizem nossos clientes</span>
+                <h2 class="section-title">Depoimentos</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonials-container">
+                    <!-- Depoimentos serão gerados via JavaScript -->
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev" id="testimonialPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="testimonial-next" id="testimonialNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Entre em contato</span>
+                <h2 class="section-title">Fale Conosco</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Endereço</h4>
+                            <p>Av. Paulista, 1000 - Bela Vista</p>
+                            <p>São Paulo - SP, 01310-100</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefone</h4>
+                            <p>(11) 99999-9999</p>
+                            <p>(11) 88888-8888</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-mail</h4>
+                            <p>contato@barbeariaroyal.com.br</p>
+                            <p>agendamento@barbeariaroyal.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 8h às 20h</p>
+                            <p>Sábado: 8h às 18h</p>
+                            <p>Domingo: Fechado</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <h4>Siga-nos nas Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://wa.me/5511999999999" class="social-link" aria-label="WhatsApp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Envie uma Mensagem</h3>
+
+                        <div class="form-group">
+                            <label for="contactName">Nome *</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">E-mail *</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Telefone</label>
+                                <input type="tel" id="contactPhone" name="contactPhone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Assunto *</label>
+                            <select id="contactSubject" name="contactSubject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="agendamento">Agendamento</option>
+                                <option value="duvida">Dúvida</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="reclamacao">Reclamação</option>
+                                <option value="orcamento">Orçamento para Eventos</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Mensagem *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <div class="map">
+                    <!-- Mapa será inserido via JavaScript -->
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="footer-logo-text">
+                            <h3>Barbearia <span>Royal</span></h3>
+                            <p>Excelência em cuidados masculinos desde 2005</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">Oferecendo serviços premium de barbearia com atenção aos detalhes e qualidade incomparável.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#pricing">Preços</a></li>
+                        <li><a href="#team">Barbeiros</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Corte de Cabelo</a></li>
+                        <li><a href="#services">Barba Completa</a></li>
+                        <li><a href="#services">Tratamento Capilar</a></li>
+                        <li><a href="#services">Hidratação Facial</a></li>
+                        <li><a href="#services">Pacote Completo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p>Inscreva-se para receber ofertas exclusivas e novidades.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" placeholder="Seu melhor e-mail" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="footer-payment">
+                        <h5>Formas de Pagamento</h5>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                            <i class="fab fa-cc-amex" title="American Express"></i>
+                            <i class="fab fa-cc-paypal" title="PayPal"></i>
+                            <i class="fas fa-pix" title="PIX">PIX</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2023 Barbearia Royal. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Mapa do Google (será carregado apenas se necessário) -->
+    <script>
+        // Script do Google Maps será carregado dinamicamente
+        function loadGoogleMaps() {
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API&callback=initMap`;
+            script.async = true;
+            script.defer = true;
+            document.head.appendChild(script);
+        }
+
+        // Carrega o mapa apenas quando a seção de contato for visível
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                loadGoogleMaps();
+                observer.disconnect();
+            }
+        }, { threshold: 0.1 });
+
+        observer.observe(document.getElementById('contact'));
+    </script>
+</body>
+</html>
